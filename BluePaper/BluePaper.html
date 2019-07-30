@@ -8,12 +8,14 @@
       height: 917px;
       width: auto;
       padding: 20px 0px 0px 0px;
-      background-image: url("https://www.transparenttextures.com/patterns/black-paper.png"),
-        linear-gradient(180deg, rgba(66,66,215,0.8) 0%, rgba(65,173,195,0.8) 100%);
+    /*  background-image: url("https://www.transparenttextures.com/patterns/black-paper.png"), */
+      background: linear-gradient(180deg, rgb(40, 45, 47) 0%, rgba(18,18,18,1) 57%, rgba(0,0,0,1) 100%);
       text-align: center;
-      font-family: monospace;
+      font-family: sans-serif;
+      font-family: ubuntu;
       font-size: 20px;
       margin: -8px;
+      color: white;
     }
 
     h1 {
@@ -21,14 +23,14 @@
     }
 
     p {
-      width: 800px;
+      max-width: 800px;
       font-size: 25px;
       margin: 16px auto;
     }
 
     hr {
-      width: 800px;
-      border-color: black;
+      max-width: 800px;
+      border-color: white;
       background-color: black;
       border-style: solid;
       margin: 50px auto;
@@ -36,26 +38,34 @@
 
     ul {
       list-style-type: none;
-      margin: 0px;
+      margin: auto;
       padding: 0px;
+      display: grid;
+      grid-template-columns: repeat(6, auto);
+      grid-template-areas: ". a b c d .";
+      grid-column-gap: 10px;
+      max-width: 800px;
     }
 
     li {
-      display: inline;
-      margin: -6px;
+    /*  background-color: lightgray; */
+      height: 31px;
     }
 
     li a {
-      display: inline-block;
       color: black;
-      width: 150px;
+      display: block;
+      background-color: rgb(100, 104, 113);
+
       text-decoration: none;
       font-size: 24px;
+      height: 100%;
     }
 
     li a:hover {
       color: white;
     }
+
 
   </style>
 </head>
@@ -72,10 +82,12 @@ Quo audire philosophia ea, mel ex unum vidit interpretaris. Qui ne utinam verear
     <hr>
 
     <ul>
+      <li/>
       <li><a href=''>About</a></li>
       <li><a href=''>Projects</a></li>
       <li><a href=''>Contact</a></li>
       <li><a href=''>Blog</a></li>
+      <li/>
     </ul>
   </div>
 </html>
