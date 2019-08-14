@@ -5,9 +5,9 @@
 
   <style>
     #overviewBlock {
-      height: 917px;
+      height: auto;
       width: auto;
-      padding: 20px 0px 0px 0px;
+      padding: 20px 0px 50px 0px;
     /*  background-image: url("https://www.transparenttextures.com/patterns/black-paper.png"), */
       background: linear-gradient(180deg, rgb(40, 45, 47) 0%, rgba(18,18,18,1) 57%, rgba(0,0,0,1) 100%);
       text-align: center;
@@ -66,15 +66,30 @@
       color: white;
     }
 
+    img {
+      width: 100%;
+    }
+
+    #photo {
+
+      width: 800px;
+      margin: auto;
+    }
+
 
   </style>
 </head>
 
 <body>
   <div id="overviewBlock">
-    <h1>Jaidon Lybbert</h1>
+    <h1 id="title">Jaidon Lybbert</h1>
     <hr>
-    <p>
+
+    <div id="photo">
+      <img src="coverPhoto.jpg">
+    </div>
+
+    <p id="body">
       Lorem ipsum dolor sit amet, ius errem recusabo intellegebat eu, ea eum esse vocent lucilius. Virtute indoctum consectetuer vim ei, vix amet vide equidem et. Cum duis doctus forensibus ut. Vix liber atomorum te, duo eu saepe iuvaret praesent.
     <br><br>
 Quo audire philosophia ea, mel ex unum vidit interpretaris. Qui ne utinam verear nominavi, brute facilisi dissentias usu eu. Te mutat delectus maiestatis sit, vel idque mundi vocibus ad. Nam no voluptua singulis quaestio, ex eum sumo mucius facilisis.
@@ -83,11 +98,13 @@ Quo audire philosophia ea, mel ex unum vidit interpretaris. Qui ne utinam verear
 
     <ul>
       <li/>
-      <li><a href=''>About</a></li>
+      <li id="About"><a href=''>About</a></li>
       <li><a href=''>Projects</a></li>
       <li><a href=''>Contact</a></li>
       <li><a href=''>Blog</a></li>
       <li/>
     </ul>
+
+    <script src="textEdit.js"></script>
   </div>
 </html>
